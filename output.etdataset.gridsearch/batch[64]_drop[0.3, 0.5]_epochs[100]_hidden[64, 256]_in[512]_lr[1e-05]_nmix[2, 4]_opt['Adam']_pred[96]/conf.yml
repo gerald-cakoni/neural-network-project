@@ -1,0 +1,21 @@
+batch_size: 64
+data_src: csv-file
+data_src_csv: dataset/ETTh2.csv
+device: cpu
+dropout: 0.5
+early_stopping_patience: 5
+feat_mixing_hidden_channels: 256
+initialize: from-scratch
+input_length: 512
+learning_rate: 1.0e-05
+no_features: 7
+no_mixer_layers: 4
+num_epochs: 100
+optimizer: Adam
+output_dir: output.etdataset.gridsearch\batch[64]_drop[0.3, 0.5]_epochs[100]_hidden[64,
+   256]_in[512]_lr[1e-05]_nmix[2, 4]_opt['Adam']_pred[96]
+prediction_length: 96
+random_seed: 42
+shuffle: true
+validation_split: temporal-holdout
+validation_split_holdout: 0.2

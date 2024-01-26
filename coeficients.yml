@@ -1,0 +1,58 @@
+---
+# REQUIRED: Output directory
+output_dir: output.etdataset
+
+# REQUIRED: Input length
+input_length: 512
+
+# REQUIRED: Prediction length
+prediction_length: 96
+
+# REQUIRED: Number of features
+no_features: 7
+
+# REQUIRED: Number of mixer layers
+no_mixer_layers: 2
+
+# REQUIRED: Data source
+data_src: csv-file
+
+# REQUIRED: Path to the data source
+data_src_csv: dataset/ETTh2.csv
+
+# Optional: How to initialize the model (restarts training from scratch if set to from-scratch)
+initialize: from-scratch # from-best-checkpoint
+
+# Optional: Batch size
+batch_size: 64
+
+# Optional: Number of epochs
+num_epochs: 30
+
+# Optional: Learning rate
+learning_rate: 0.0001
+
+# Optional: Optimizer - Adam, SGD, RMSprop, etc
+optimizer: Adam
+
+# Optional: Random seed
+random_seed: 64
+
+# Optional: Validation split method
+validation_split: temporal-holdout
+
+# Optional: Validation split holdout - fraction of the data to be used for validation
+# (only used if validation_split is set to temporal-holdout)
+validation_split_holdout: 0.2
+
+# Optional: dropout
+dropout: 0.3
+# The fraction is determined by the dropout rate, which is typically 
+# a hyperparameter specified before training (e.g., 0.2 means 20% dropout).
+# The dropout is applied independently to each neuron.
+# By randomly deactivating neurons during training, dropout introduces noise
+# and prevents the neural network from relying too much on specific neurons or features. 
+# This helps to avoid overfitting.
+
+# Optional: Number of hidden channels in the feature mixing layer
+feat_mixing_hidden_channels: null
