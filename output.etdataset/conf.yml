@@ -1,6 +1,6 @@
 batch_size: 64
 data_src: csv-file
-data_src_csv: dataset/ETTh2.csv
+data_src_csv: dataset/ETTm1.csv
 device: cpu
 dropout: 0.3
 early_stopping_patience: 5
