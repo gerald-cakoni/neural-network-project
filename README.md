@@ -2,6 +2,10 @@
 # Neural Network Project
 # TSMixer
 
+`Report.pdf` - Explanation how the method works and some results.
+
+`project.ipynb` - One option of running in jupiter notebook (After installing requirements, see above in this readme file.)
+
 The implementation is done based on .yml files, respectively `coeficients.yml`, `best.coeficients.yml` and `gridsearch.coeficiets.yml` where are specified all the parameters to train the models. 
 
 
@@ -9,6 +13,7 @@ The implementation is done based on .yml files, respectively `coeficients.yml`, 
 
 Datasets are in this [link](https://github.com/zhouhaoyi/ETDataset/tree/11ab373cf9c9f5be7698e219a5a170e1b1c8a930).
 
+The dataset used in this implementation is aleready in this repository at dataset folder.
 ## Dataset Used
 
 From the dataset above I chosed ETTh1 to train the model.
@@ -30,11 +35,7 @@ From the dataset above I chosed ETTh1 to train the model.
 Each parameter is initialization is on .yml files, that can be chosen during training. 
 
 ## Running
-After downloading the datasets create a new folder named `dataset` and upload there the dataset you want to analyse.
 
-```bash
-cd dataset
-```
 Open a virtual environment to avoid conflicts with dependencies with other projects:
 
 ```bash
